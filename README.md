@@ -58,7 +58,7 @@ $ java e_commerce.Main
     <p>- Customer 3 adds 2 cheese then checkout ---> Failure becuase product is out of stock (customer 1 bought 2 cheese so only 1 cheese is in stock) then another failure becuase the cart is empty</p>
     <p>- Customer 4 adds 1 biscuits ---> Failure becuase product is expired </p>
 
-![Test Cases](tests.png)
+![Test Cases](tests.jpg)
    
    
 
