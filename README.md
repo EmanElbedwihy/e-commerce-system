@@ -23,13 +23,13 @@ A simple Java-based e-commerce system with support for perishable and shippable 
 This is a list of needed instructions to run the project locally
 ### Installation 
 
-1. **_Clone the repository_**
+1. **Clone the repository**
 
 ```bash
-$ git clone [https://github.com/EmanElbedwihy/.git]
+$ git clone [https://github.com/EmanElbedwihy/e-commerce-system.git]
 ```
 
-2. **_Install Extension Pack for Java in VS Code_**
+2. **Install Extension Pack for Java in VS Code**
    
 
 
