@@ -7,27 +7,32 @@ A simple Java-based e-commerce system with support for perishable and shippable 
 
 
 ## 📃 Assumptions
-1- Shipping Fees depends on weight (10 * total weight of shippable products in the cart).
 
-2- All Weights are in Kg.
+1. **Shipping Fees** are calculated as:  
+   `10 * total weight of shippable products in the cart`.
 
-3- My Main class define only 4 products for testing.
-    <p>- Cheese product which requires shipping and has expiry date and has price=50, quantity=3, expiry date=1-8-2025 and weight=0.5kg</p>
-    <p>- TV prouduct which requires shipping and has price=5000, quantity=1 and weight=10kg</p>
-    <p>- Mobile Scratch Card product which has price=20 and quantity=10</p>
-    <p>- Biscuits prouduct which has expiry date and has price=20, quantity=5 and expiry date=1-7-2024 (expired)</p>
+2. **All weights** are measured in **kilograms (Kg)**.
 
-3- My Main class define only 4 customers for testing.
-    <p>- Customer 1 with balance 1000</p>
-    <p>- Customer 2 with balance 100</p>
-    <p>- Customer 3 with balance 1000</p>
-    <p>- Customer 4 with balance 1000</p>
-   
+3. The `Main` class defines **4 products** for testing:
+   - 🧀 **Cheese**: Requires shipping, has expiry date  
+     - Price: `50`, Quantity: `3`, Expiry Date: `1-8-2025`, Weight: `0.5 Kg`
+   - 📺 **TV**: Requires shipping, does not have expiry date  
+     - Price: `5000`, Quantity: `1`, Weight: `10 Kg`
+   - 💳 **Mobile Scratch Card**: No shipping , does not have expiry date 
+     - Price: `20`, Quantity: `10`
+   - 🍪 **Biscuits**: No shipping , has expiry date , **expired**  
+     - Price: `20`, Quantity: `5`, Expiry Date: `1-7-2024`
+
+4. The `Main` class defines **4 customers** for testing:
+   - 👤 **Customer 1**: Balance `1000`
+   - 👤 **Customer 2**: Balance `100`
+   - 👤 **Customer 3**: Balance `1000`
+   - 👤 **Customer 4**: Balance `1000`
+
     
 
 ## 🏁 Getting Started 
 
-This is a list of needed instructions to run the project locally
 ### Installation 
 
 1. **Clone the repository**
@@ -52,11 +57,19 @@ $ java e_commerce.Main
 
 
 ## 📃 Test Cases 
-    <h3 >Test Case 1</h3>
-    <p>- Customer 1 adds 2 cheese product and 2 mobile scratch card then checkout ---> Success </p>
-    <p>- Customer 2 adds 1 tv product ---> Failure becuase balance is not Enough</p>
-    <p>- Customer 3 adds 2 cheese then checkout ---> Failure becuase product is out of stock (customer 1 bought 2 cheese so only 1 cheese is in stock) then another failure becuase the cart is empty</p>
-    <p>- Customer 4 adds 1 biscuits ---> Failure becuase product is expired </p>
+
+#### ✅ Test Case 1
+- Customer 1 adds 2 cheese products and 2 mobile scratch cards then checks out → ✅ Success
+
+#### ❌ Test Case 2
+- Customer 2 adds 1 TV product → ❌ Failure (balance not enough)
+
+#### ❌ Test Case 3
+- Customer 3 adds 2 cheese → ❌ Failure (out of stock becuase customer 1 bought 2 cheese so only 1 cheese is in stock)
+- Then tries to checkout → ❌ Failure (cart is empty)
+
+#### ❌ Test Case 4
+- Customer 4 adds 1 biscuits → ❌ Failure (product is expired)
 
 ![Test Cases](tests.jpg)
    
