@@ -2,7 +2,7 @@
 <h1 align='center'>e-commerce system for Fawry task</h1>
 
 
-## 📙 About <a name = "about"></a>
+## 📙 About 
 A simple Java-based e-commerce system with support for perishable and shippable products, cart management, and checkout simulation.
 
 
@@ -35,7 +35,7 @@ $ git clone [https://github.com/EmanElbedwihy/.git]
 
 ### Running 
 
-1. **Run the following commands in terminal_**
+ **Run the following commands in terminal**
 
 ```bash
 $ javac e_commerce/*.java
