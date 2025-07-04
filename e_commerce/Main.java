@@ -2,7 +2,7 @@ package e_commerce;
 
 import java.time.LocalDate;
 
-public class e_commerce {
+public class Main {
 	
 
 	    public static void main(String[] args) {
